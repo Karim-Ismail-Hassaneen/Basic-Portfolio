@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-solid.svg" href="../public/x-solid.svg"/>
+    <link rel="stylesheet" href="CSS/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/Normalize.css">
     <link rel="stylesheet" href="CSS/master.css">
+    <script src="JS/index.js"></script>
     <title>FolioX</title>
 </head>
 <body>
+    <!-- Setting Box -->
+    <div class="setting-box">
+        <div class="setting-sider">
+            <i class="fa fa-gear"></i>
+        </div>
+
+        <div class="setting-container">
+            Options
+        </div>
+    </div>
+
     <!-- Landing Page -->
         <div class="container">
             <div class="landing-page">
@@ -20,18 +33,19 @@
                 <div class="header">
                     <div class="logo">Folio<span class="x">X</span></div>
                     <ul class="links">
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Service</li>
-                        <li>Portfolio</li>
-                        <li>Blog</li>
-                        <li>Contact</li>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
                 <div class="intro-container">
                     <div class="intro">
-                        <h1>Mo<span class="h">7</span>amed <span class="last-name">Ismail</span></h1>
-                        <p>Hard Worker & Smart Man</p>
+                        <h2>Hello, I'M <span class="line">________.</span> <br/></h2>
+                         <h1>Mo<span class="h">7</span>amed<span class="last-name"><br/> Ismail</span></h1>
+                         <p>Hard Worker & Smart Man</p> 
                         <button>Get Connacted</button>
                     </div>
                     <div class="img"></div>
@@ -41,7 +55,7 @@
                     <div class="content">
                         <div class="card">
                             <div class="icon">
-                                <i class="fa-regular fa-gear"></i>
+                                <i class="fa-solid fa-desktop"></i>
                             </div>
                             <div class="info">
                                 <h2>Deeper Skillset</h2>
@@ -50,7 +64,7 @@
                         </div>
                         <div class="card">
                             <div class="icon">
-                                <i class="fa-regular fa-gear"></i>
+                                <i class="fa-solid fa-lines-leaning"></i>
                             </div>
                             <div class="info">
                                 <h2>Creative Work</h2>
@@ -59,16 +73,34 @@
                     </div>
                     <div class="card">
                         <div class="icon">
-                            <i class="fa-regular fa-gear"></i>
+                            <i class="fa-sharp fa-solid fa-chart-simple"></i>
                         </div>
                         <div class="info">
-                            <h2>Strong Dedication</h2>
+                            <h2>Markting</h2>
                             <p>Marketing refers to activities a company undertakes to promote the buying or selling of a product or service</p>
                         </div>
                     </div>
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                        <div class="info">
+                            <h2>Strong Dedication</h2>
+                            <p>grey metal device that has a number of teeth around its circular periphery. This device is often used in machines, clocks, and bikes</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            </div>
+            <!-- Ending Landing Page -->
+            <div class="hr"></div>
+
+
+        <!-- About Me Section -->
+        <div class="about">
+            <h2>About Me</h2>
+            <p>A Professional Accountant <br/> Who Loves To Do Transactions</p>
         </div>
-    <script src="JS/index.js"></script>
+        </div>
+        <script src="JS/index.js"></script>
 </body>
 </html>
