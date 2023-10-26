@@ -1,6 +1,17 @@
+const colorList = document.querySelectorAll(".colors-list li");
 const mainColors = localStorage.getItem("color_option");
+
 if (mainColors !== null) {
-  document.documentElement.style.setProperty('--main-color', localStorage.getItem("color_option"))
+  document.documentElement.style.setProperty('--main-color', mainColors)
+  //Remove Class .active from All Elements
+  colorList.forEach(element => {
+    element.classList.remove("active");
+    //Add Class .active on each element and save it on Local Storeage 
+    if (element.dataset.color === mainColors) {
+      //Added Class .active
+      element.classList.add("active");
+    }
+  })
 }
 
 const btn = document.querySelector(".setting-sider .fa-gear");

@@ -7,12 +7,11 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-}
-
-body {
-  align-items: center;
-  font-family: "Open Sans", sans-serif;
-  background-color: #192056;
+  body {
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    background-color: #192056;
+  }
 }
 
 .setting-box {
@@ -22,7 +21,11 @@ body {
   background-color: #3a2a6e;
   z-index: 100;
   width: 250px;
-  min-height: 100vh;
+  min-height: 50vh;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 0;
   transition: 0.5s;
   .setting-sider {
     position: absolute;
@@ -38,8 +41,11 @@ body {
     }
   }
   .option-box {
-    padding: 20px;
-
+    padding: 10px;
+    background-color: #644cae;
+    text-align: center;
+    margin: 10px;
+    border-radius: 2%;
     h3 {
       margin: 0;
       text-transform: uppercase;
@@ -59,9 +65,11 @@ body {
         border-radius: 50%;
         opacity: 0.5;
         cursor: pointer;
+        transition: 0.5s ease;
       }
       .active {
         opacity: 1;
+        border: 2px solid #fff;
       }
        li:first-child {
         background-color: var(--main-color);
@@ -81,22 +89,6 @@ body {
     }
   }
 }
-
-/* .option-box  .colors-list li:first-child {
-  background-color: var(--main-color);
-}
-.option-box  .colors-list li:nth-child(2) {
-  background-color: #580ef6;
-}
-.option-box  .colors-list li:nth-child(3) {
-  background-color: #3d3a50;
-}
-.option-box  .colors-list li:nth-child(4) {
-  background-color: #1a1c22;
-}
-.option-box  .colors-list li:nth-child(5) {
-  background-color: #f7f7f7;
-} */
 
 .setting-box.open {
   left: 0;
@@ -267,9 +259,7 @@ body {
   margin-bottom: 20px;
   margin-left: 240px;
 }
-
-.about {
-  height: 100vh;
+.about-header {
   h2 {
     color: var(--main-color);
     font-size: 2em;
@@ -281,6 +271,52 @@ body {
     font-size: 1.5em;
     font-weight: 700;
     text-align: center;
+  }
+}
+
+.about-us {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  .img-box {
+    flex: 1;
+    text-align: center;
+    img {
+      width: 50%;
+      background-color: var(--main-color);
+      border-radius: 5%;
+    }
+  }
+  .info-box {
+    flex: 1;
+    h2 {
+      font-weight: bold;
+      font-size: 35px;
+      color: var(--main-color);
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+  .box-content {
+    height: 35vh;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-top: 10px;
+    position: relative;
+    .bord {
+      border-left: 2px solid var(--main-color);
+      height: 250px;
+      position: absolute;
+      left: 50%;
+      top: 10%;
+      margin-left: -4px;
+    }
+    .box-right {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
 }
 
