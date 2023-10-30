@@ -196,11 +196,7 @@
       font-size: 3em;
       font-weight: 700;
       margin-top: 1em;
-
-      .h {
-        color: var(--main-color);
-      }
-
+      
       .last-name {
         color: var(--main-color);
       }
@@ -369,6 +365,9 @@
       font-weight: 500;
     }
   }
+}
+.h {
+  color: var(--main-color);
 }
 .button {
   background-color: var(--main-color);
