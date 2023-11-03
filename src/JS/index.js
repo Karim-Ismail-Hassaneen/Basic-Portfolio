@@ -38,3 +38,12 @@ colorsLi.forEach(li => {
     event.target.classList.add("active");
   })
 })
+
+// skills-section selected 
+
+const mySkills = document.querySelector(".skills-section");
+
+window.onscroll = () => {
+  let skillsOffsetTop = mySkills.offsetTop;
+    let skillsOuterHeight = mySkills.offsetHeight;
+}
