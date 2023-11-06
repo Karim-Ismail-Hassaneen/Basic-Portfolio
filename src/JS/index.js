@@ -41,9 +41,25 @@ colorsLi.forEach(li => {
 
 // skills-section selected 
 
-const mySkills = document.querySelector(".skills-section");
+const mySkills = document.querySelector(".skills-container");
 
-window.onscroll = () => {
+window.onscroll = function () {
+  // Skill Offset To The Top 
   let skillsOffsetTop = mySkills.offsetTop;
+    // Skill Offset To The Height 
     let skillsOuterHeight = mySkills.offsetHeight;
-}
+      // Window Height 
+      let windowHeight = window.innerHeight;
+        // Window Scroll Up 
+        let windowScrollTop = window.scrollY;
+          // Window Scroll Down
+          let windowScrollDown = window.scrollX;
+
+    if (windowScrollTop > (skillsOffsetTop + skillsOuterHeight - windowHeight)) {
+        let allSkills = document.querySelectorAll(".skill-box .skill-progrees span");
+          allSkills.forEach(skill => {
+            skill.style.width = skill.dataset.progress;
+    });
+  }
+        
+}  
