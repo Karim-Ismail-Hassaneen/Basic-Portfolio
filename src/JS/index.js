@@ -122,8 +122,13 @@ myGallary.forEach((img) => {
 
     if (e.target.className === "close-popup") {
       e.target.parentNode.remove()
-      let popupClose = document.querySelector(".popup-container")
-      popupClose.remove();
+      let closeingPopup = document.querySelector(".popup-container")
+      closeingPopup.remove();
     };
   });
 });
+
+// Select The Bullets
+
+const allBullets = document.querySelectorAll(".setting-container .option-box-two .bullets-list li");
+  allBullets.forEach(bullet => {bullet.addEventListener("click", (e) => {document.querySelector(e.target.dataset.section).scrollIntoView({behavior: "smooth"});});});
